@@ -4,34 +4,55 @@
 import java.util.Scanner;
 
 class Q7 {
+    public static void rotateRight(int[] arr, int k) {
+        int n = arr.length;
+        k = k % n; 
+        if (k == 0) return; 
+
+        int[] temp = new int[n];
+
+        
+        for (int i = 0; i < k; i++) {
+            temp[i] = arr[n - k + i];
+        }
+
+        
+        for (int i = 0; i < n - k; i++) {
+            temp[k + i] = arr[i];
+        }
+
+       
+        System.arraycopy(temp, 0, arr, 0, n);
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Array length");
+
+        System.out.println("Enter Array length:");
         int n = sc.nextInt();
-        int[] arr = new int[n];
-		if(arr.length <1){
-			System.out.println("No element in array");
+        
+        if (n < 1) {
+            System.out.println("No element in array");
             return;
-		}
+        }
+
+        int[] arr = new int[n];
+
         System.out.println("Enter elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-		int a[]=new int[n];
-		System.out.println("Which position you want to rotate an aray");
-        int k = sc.nextInt();
-		int j=0;
-		for(int i=k-1;i<n;i++){
-			a[j]=arr[i];
-			j++;
-		}
-		for(int i=0;i<k-1;i++){
-			a[j]=arr[i];
-			j++;
-		}
 
-        for(int i = 0; i < n; i++) {
-            System.out.print(a[i] + " ");
+        System.out.println("Enter positions to rotate:");
+        int k = sc.nextInt();
+
+        rotateRight(arr, k);
+
+        System.out.println("Rotated Array:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
         }
+
+        sc.close();
     }
 }
