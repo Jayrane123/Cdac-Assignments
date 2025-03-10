@@ -1,9 +1,9 @@
-// 4.  Count Even and Odd Numbers 
-// ○  Count the number of even and odd numbers in an array.
+// 7.  Rotate an Array 
+// ○  Rotate the array to the right by k positions.
 
 import java.util.Scanner;
 
-class Q4 {
+class Q7 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Array length");
@@ -17,18 +17,21 @@ class Q4 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
-        int even=0;
-		int odd=0;
-		for(int i=0;i<n;i++){
-			if(arr[i]%2==0){
-				even++;
-			}
-			else{
-				odd++;
-			}
+		int a[]=new int[n];
+		System.out.println("Which position you want to rotate an aray");
+        int k = sc.nextInt();
+		int j=0;
+		for(int i=k-1;i<n;i++){
+			a[j]=arr[i];
+			j++;
 		}
-		System.out.println("Even numbers in array is :"+even);
-		System.out.println("odd numbers in array is :"+odd);
+		for(int i=0;i<k-1;i++){
+			a[j]=arr[i];
+			j++;
+		}
+
+        for(int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
+        }
     }
 }
