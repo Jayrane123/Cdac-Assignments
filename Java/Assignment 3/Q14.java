@@ -1,3 +1,6 @@
+// 14.  Write a program in Java to accept 20 numbers in a single dimensional array arr[20]. Transfer 
+// and store all the even numbers in an array even[ ] and all the odd numbers in another array 
+// odd[ ]. Finally, print the elements of the even & the odd array. 
 import java.util.Scanner;
 
 class Q14 {
