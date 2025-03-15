@@ -22,7 +22,9 @@ class Q7 {
         }
 
        
-        System.arraycopy(temp, 0, arr, 0, n);
+        for (int i = 0; i < n; i++) {
+            arr[i] = temp[i];
+        }
     }
 
     public static void main(String args[]) {

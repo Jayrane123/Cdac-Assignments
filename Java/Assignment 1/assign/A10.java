@@ -1,12 +1,13 @@
-//10. Check if a Number is Positive and Even
+//9. Compare Two Integers Using Relational Operators
 
 public class A10 {
     public static void main(String[] args) {
-        int num = 12;
-        if (num > 0 && num % 2 == 0) {
-            System.out.println(num + " is positive and even.");
-        } else {
-            System.out.println(num + " is not positive and even.");
-        }
+        int a = 10, b = 20;
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
     }
 }

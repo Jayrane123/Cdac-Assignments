@@ -22,7 +22,7 @@ class Q3{
 		int f=b[0],s=b[0];
 		int temp=0;
         for (int j = 1; j < r; j++) {
-			if(b[j]>s){
+			if(b[j]>f){
 				s=b[j];
 				if(s>f){
 					temp=f;
