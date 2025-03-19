@@ -21,18 +21,25 @@ class Q10{
 		for (int num : intter) System.out.print(num + " ");
     }
 	public static void unionNum(int[] arr1, int[] arr2, int n, int m) {
-        int i = n - 1, j = 0;
-        while (i >= 0 && j < m) {
-            if (arr1[i] > arr2[j]) {
-                int temp = arr1[i];
-                arr1[i] = arr2[j];
-                arr2[j] = temp;
-            }
-            i--;
-            j++;
-        }
-        java.util.Arrays.sort(arr1);
-        java.util.Arrays.sort(arr2);
+		int []un=new int[n+m];
+		int ind=0;
+        for(int i=0;i<n;i++){
+			int count=0;
+			for(int j=0;j<n;j++){
+				if(arr1[i]==arr1[j] && count==0){
+					un[ind++]=arr1[i];
+					count++;
+				}
+				else{
+					break;
+				}
+			}
+		}
+        java.util.Arrays.sort(un);
+		System.out.println();
+		for (int num : un) System.out.print(num + " ");
+		for()
+        
     }
 
     public static void main(String args[]) {
@@ -49,6 +56,8 @@ class Q10{
         for (int i = 0; i < m; i++) arr2[i] = sc.nextInt();
 
         interSectNum(arr1, arr2, n, m);
+		
+        unionNum(arr1, arr2, n, m);
 
         sc.close();
     }

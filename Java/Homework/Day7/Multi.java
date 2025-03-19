@@ -1,5 +1,5 @@
 interface A{
-	void print(){
+	default void print(){
 		System.out.println("Class A");
 	}
 }
