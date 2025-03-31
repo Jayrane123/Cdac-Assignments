@@ -1,23 +1,24 @@
 //method 1
 // class Reverse{
-	// public static void main(String args[]){
-		// String a="ABCD";
-		// StringBuilder s=new StringBuilder();
-		// s.append(a);
-		// s.reverse();
-		// System.out.println(s);
-	// }
+// 	public static void main(String args[]){
+// 		String a="ABCD";
+// 		StringBuilder s=new StringBuilder(a);
+// 		//s.append(a);
+// 		s.reverse();
+// 		System.out.println(s);
+// 	}
 // }
 
 //method 2
-// class Reverse{
-	// public static void main(String args[]){
-		// String a="ABCD";
-		// StringBuffer s=new StringBuffer(a);
-		// s.reverse();
-		// System.out.println(s);
-	// }
-// }
+class Reverse{
+	public static void main(String args[]){
+		String a="ABCD";
+		StringBuffer s=new StringBuffer();
+		s.append(a);
+		s.reverse();
+		System.out.println(s);
+	}
+}
 
 //method 3
 // class Reverse{
@@ -51,21 +52,21 @@
 // }
 
 //method 5
-class Reverse{
-	public static void main(String args[]){
-		 String s = "Geeks";
+// class Reverse{
+// 	public static void main(String args[]){
+// 		 String s = "Geeks";
 
         
-        byte[] arr = s.getBytes();
-		for(int a:arr){
-			System.out.println(a);
-		}
+//         byte[] arr = s.getBytes();
+// 		for(int a:arr){
+// 			System.out.println(a);
+// 		}
         
-        byte[] res = new byte[arr.length];      
-        for (int i = 0; i < arr.length; i++)
-            res[i] = arr[arr.length - i - 1];
+//         byte[] res = new byte[arr.length];      
+//         for (int i = 0; i < arr.length; i++)
+//             res[i] = arr[arr.length - i - 1];
 
-        System.out.println(new String(res)); // new String(res) can convert byteArr to String
-	}
-}
+//         System.out.println(new String(res)); // new String(res) can convert byteArr to String
+// 	}
+// }
 
