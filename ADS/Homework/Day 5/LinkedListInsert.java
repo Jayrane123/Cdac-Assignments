@@ -65,22 +65,6 @@ class LinkedListInsert{
 		}
 		prev.next=temp.next;
 	}
-	// Node reverse(Node start){
-		// Node curr = start, prev = null, n;
-
-        
-        // while (curr != null) {
-           
-            // n = curr.next;
- 
-            // curr.next = prev;
-
-            // prev = curr;
-            // curr = n;
-        // }
-
-        // return prev;
-	// }
 	Node reverse(Node head){
 		
 		Node prev = null;

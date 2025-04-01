@@ -1,8 +1,8 @@
 // 10.  Find Intersection and Union of Two Arrays 
 // ○  Find the intersection and union of two unsorted arrays
 
-import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Scanner;
 class Q10{
     public static void interSectNum(int[] arr1, int[] arr2, int n, int m) {
         int intter[]=new int[n+m];
@@ -38,7 +38,7 @@ class Q10{
         java.util.Arrays.sort(un);
 		System.out.println();
 		for (int num : un) System.out.print(num + " ");
-		for()
+	
         
     }
 
