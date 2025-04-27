@@ -17,6 +17,10 @@ import java.util.Scanner;
 
 public class Q1 {
     static void secLar(int arr[]){
+        if (arr.length < 2) {
+            System.out.println("Array must have at least 2 elements.");
+            return;
+        }    
         int max=arr[0];
         int sec=arr[1];
         if(sec>max){
@@ -35,11 +39,10 @@ public class Q1 {
 
             }
         }
-        System.out.println("Second Largest Elment in Arr is : "+sec);
+        System.out.println("Second Largest Element in Arr is : "+sec);
     }
     public static void moveZeros(int[] arr) {
         int nonZeroIndex = 0;
-
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != 0) {
                 int temp = arr[nonZeroIndex];

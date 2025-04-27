@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="container">
+        <form name="myForm" action="#" onsubmit="return validform()" method="post">
+            <div class="form-group">
+                <label class="label" for="fname">First Name</label>
+                <input class="type" type="text" name="fname" placeholder="Enter your firstname" id="fname">
+              </div>
+            
+              <div class="form-group">
+                <label class="label" for="lastname">Last Name</label>
+                <input class="type" type="text" name="lname" placeholder="Enter your lastname" id="lastname">
+              </div>
+            
+              <div class="form-group">
+                <label class="label" for="email">Email Id</label>
+                <input class="type" type="email" name="email" placeholder="Write email ID" id="email">
+            </div>
+            <div class="submition">
+                <input class="sub" type="submit">
+              </div>
+              
+        </form>
+        <div id="output" style="margin-top: 30px; padding: 20px; font-size: 18px; color: #2f1e12; background-color: #f3f3f3; border-radius: 10px;"></div>
+        <script src="Script.js"></script>
+    </div>
+</body>
+</html>

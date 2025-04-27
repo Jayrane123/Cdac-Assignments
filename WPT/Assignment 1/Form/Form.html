@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    
+    <form>
+      <h1 ><b>Student Registration Form</b></h1> 
+        <div class="form-group">
+          <label class="label" for="fname">First Name</label>
+          <input class="type" type="text" placeholder="Enter your firstname" id="fname">
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="lastname">Last Name</label>
+          <input class="type" type="text" placeholder="Enter your lastname" id="lastname">
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="email">Email Id</label>
+          <input class="type" type="email" placeholder="Write email ID" id="email">
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="mnumber">Mobile Number</label>
+          <input class="type" type="number" id="mnumber">
+        </div>
+      
+        <div class="form-group">
+          <label class="label">Gender</label>
+          <label style="margin: 16px;"><input step="3px" type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="birth">Date of Birth</label>
+          <input class="type" type="date" id="birth">
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="city">City</label>
+          <input class="type" type="text" id="city">
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="pincode">Pin Code</label>
+          <input class="type" type="number" id="pincode">
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="add">Address</label>
+          <textarea name="add" id="add"></textarea>
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="state">State</label>
+          <input class="type" type="text" id="state">
+        </div>
+      
+        <div class="form-group">
+          <label class="label" for="country">Country</label>
+          <input class="type" type="text" id="country">
+        </div>
+      
+        <div class="form-group">
+          <label class="label">Hobbies</label>
+          <label><input class="inlab" type="checkbox"> Sport</label><br>
+          <label class="chelabel"><input class="inlab" type="checkbox"> Dancing</label><br>
+          <label class="chelabel"><input class="inlab" type="checkbox"> Singing</label><br>
+          <label class="chelabel"><input class="inlab" type="checkbox"> Content Writing</label><br>
+          <label class="chelabel"><input class="inlab" type="checkbox"> Drawing</label><br>
+          <input class="chelabel" type="text" placeholder="Other hobbies" style="height: 2rem; border-radius:8px ;">
+        </div>
+      
+        <div class="form-group">
+  
+        <h3>Qualification:</h3>
+        <table class="qualification-table">
+          <thead>
+            <tr>
+              <th>Sl.No.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input class="ab" type="text" name="board1"></td>
+              <td><input class="ab" type="text" name="percent1"></td>
+              <td><input class="ab" type="text" name="year1"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input class="ab" type="text" name="board2"></td>
+              <td><input class="ab" type="text" name="percent2"></td>
+              <td><input class="ab" type="text" name="year2"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input class="ab" type="text" name="board3"></td>
+              <td><input class="ab" type="text" name="percent3"></td>
+              <td><input class="ab" type="text" name="year3"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input class="ab" type="text" name="board4"></td>
+              <td><input class="ab" type="text" name="percent4"></td>
+              <td><input class="ab" type="text" name="year4"></td>
+            </tr>
+          </tbody>
+        </table>
+                
+      </div>
+        <div class="submition">
+          <input class="sub" type="reset">
+          <input class="sub" type="submit">
+        </div>
+      </form>
+      
+</body>
+</html>

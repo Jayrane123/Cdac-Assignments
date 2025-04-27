@@ -47,7 +47,7 @@ class LinkedListInsert{
 		}
 		Node newNode=new Node(nData);
 		n.next= newNode;
-		return;
+		
 		
 	}
 	void delete(int key){

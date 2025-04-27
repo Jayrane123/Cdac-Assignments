@@ -56,32 +56,45 @@ static void vowel(String listen,String silent){
     for (int i = 0; i < str1.length(); i++) {
         char c=str1.charAt(i);
        
-        // if(c=='a' ||c=='e'||c=='i'||c=='o'||c=='u'){
-        //     v++;
-        // }else{
-        //     if((c-'a')<26 || (c-'a')>=0){
-        //         c2++;
-        //     }
-        // }
-        if (Character.isLetter(c)) {
-            if ("aeiou".indexOf(c) != -1) {
-                v++;
-            } else {
+        if(c=='a' ||c=='e'||c=='i'||c=='o'||c=='u'){
+            v++;
+        }else{
+            if((c-'a')<26 || (c-'a')>=0){
                 c2++;
             }
         }
-    }    
-    for (int i = 0; i < str2.length(); i++) { 
-        char c1=str2.charAt(i);   
-        if (Character.isLetter(c1)) {
-            if ("aeiou".indexOf(c1) != -1) {
-                v++;
-            } else {
-                c2++;
-            }
-        }
+        //     if (Character.isLetter(c)) {
+    //         if ("aeiou".indexOf(c) != -1) {
+    //             v++;
+    //         } else {
+    //             c2++;
+    //         }
+    //     }
+    // }    
+    // for (int i = 0; i < str2.length(); i++) { 
+    //     char c1=str2.charAt(i);   
+    //     if (Character.isLetter(c1)) {
+    //         if ("aeiou".indexOf(c1) != -1) {
+    //             v++;
+    //         } else {
+    //             c2++;
+    //         }
+    //     }
        
     }
+   
+    
+    for (int i = 0; i < str2.length(); i++) {
+        char c=str2.charAt(i);
+       
+        if(c=='a' ||c=='e'||c=='i'||c=='o'||c=='u'){
+            v++;
+        }else{
+            if((c-'a')<26 || (c-'a')>=0){
+                c2++;
+            }
+        }
+    } 
     System.out.println("Vowels: "+v +" Consonants: "+c2);
 }
     public static void main(String[] args) {

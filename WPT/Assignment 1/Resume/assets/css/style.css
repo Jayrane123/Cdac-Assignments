@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+}
+#pass {
+    width: 6rem;
+    margin-left: 8px;
+    align-items: center;
+    display: flex
+;
+    justify-content: center;
+}
+.left,
+.right {
+}
+.left {
+  flex: 0.3;
+  width: 30px;
+  padding: 20px;
+  background: linear-gradient(45deg, #d0ea88, #0000000a);
+  border: 1px solid #333;
+}
+.right {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #333;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  
+}
+h3 {
+    font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(147, 70, 70);
+}
+#con {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  border: 3px solid green;
+ 
+}
+.det{
+    margin-block: 0.5rem;
+    
+}

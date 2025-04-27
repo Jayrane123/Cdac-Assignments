@@ -9,7 +9,7 @@ class Stack{
 		return top<0;
 	}
 	boolean isFull(){
-		return top>max-1;
+		return top>=max-1;
 	}
 	boolean push(int x){
 		if(top >= (max-1)){
@@ -41,6 +41,16 @@ class Stack{
 			return x;
 		}
 	}
+	void display() {
+		if (isEmpty()) {
+			System.out.println("Stack is Empty");
+			return;
+		}
+		System.out.println("Stack elements (top to bottom):");
+		for (int i = top; i >= 0; i--) {
+			System.out.print(a[i]+" ");
+		}
+	}
 	
 }
 class StackDemo{
@@ -49,9 +59,11 @@ class StackDemo{
 		s.push(40);
 		s.push(30);
 		s.push(20);
-		
+		s.display();
+		System.out.println();
 		System.out.println(s.peek());
 		System.out.println(s.pop());
 		System.out.println(s.peek());
+		s.display();
 	}
 }

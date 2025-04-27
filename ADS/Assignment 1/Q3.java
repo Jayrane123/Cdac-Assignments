@@ -17,22 +17,13 @@
 // Peak element: 18
 public class Q3 {
     static int index(int arr[],int key){
-
-        // for(int i=0;i<arr.length;i++){
-        //     if(arr[i]==key){
-        //         System.out.println("Key found at index: "+i);
-        //         return;
-        //     }
-        // }
-        // System.out.println("key Index not found");
-        int result = -1;
         int left = 0;
         int right = arr.length - 1;       
             while(left<=right){
-                int mid=left+(right-left)/2;
+                //int mid=left+(right-left)/2;
+                int mid=left+right/2;
                 if(arr[mid]==key){
-                   result=mid;
-                   right=mid-1;
+                    return mid;
                 }else if (arr[mid] < key){
                      left = mid + 1;
                 }else{
@@ -40,7 +31,7 @@ public class Q3 {
                 }     
 
             }
-        return result;
+        return -1;
     }
     static void firstlast(int arr[],int key){
 
